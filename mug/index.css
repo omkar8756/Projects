@@ -5,7 +5,55 @@
 }
 #wrapper{
    height:100vh;
-   max-width:400px;
+   width:100%;
    overflow-y: visible;
    overflow-x: hidden;
+   background-color:rgb(255, 235, 217);
 }
+.container{
+    margin:100px auto;
+    border-radius: 20px;
+    display:flex;
+    height:300px;
+    width:60%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    object-fit: cover;
+    position: relative;
+}
+ .image{
+    height:100%;
+    width:45%;
+    object-fit: cover;
+}
+.image img{
+    height:100%;
+    width:100%;
+    border-radius: 20px 0px 0px 20px;
+
+}
+.button button{
+    padding: 10px;
+    border-radius: 10px;
+    border-color:rgba(51, 204, 12, 0.785);
+    width: 200px;
+    font-weight: 150;
+    background-color: rgba(51, 204, 12, 0.785);
+    color: white;
+}
+.topic{
+    transform: translate(20px,10px);
+    font-weight: lighter;
+    color: rgb(186, 184, 184);
+}
+.heading{
+    transform: translate(-80px,20px);
+    font-weight:bold;
+    font-size: large;
+}
+.description{
+    color: rgb(186, 184, 184);
+}
+
