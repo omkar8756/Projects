@@ -72,7 +72,7 @@ a{
     user-select: none;
     font-size: 7em;
     color: rgb(231,231, 231);
-    bottom:-16%;
+    bottom:-19%;
     left:-5%;
     font-weight: bold;
     transition: all 3s;
@@ -246,4 +246,18 @@ a{
         transform:translate(15px,-30px);
     }
 }
+.project-section{
+    background-color: rgb(231, 231, 231);
+    width:100vw;
+    margin:4rem;
+    
+}
+.project-header{
+    color: var(--borange);
+    /* font-weight:0.6rem; */
+    font-size:70px;
+    text-align:center;
+    padding-top:30px;
+}
+
 
