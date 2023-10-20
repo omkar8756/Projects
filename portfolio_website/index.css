@@ -270,7 +270,7 @@ a{
 .project-card{
     width:90%;
     height:550px;
-    background-image: url(Materials/img/Project2.png);
+    background-image: url(Materials/img/Project1.png);
     background-size: cover;
     background-repeat: no-repeat;
     position:relative;
@@ -298,7 +298,7 @@ a{
     z-index:9;
 }
 .project-card:hover::before{
-    animation:move1 2s linear;
+    animation:move1 2s ease;
 }
 @keyframes move1{
     0%{
@@ -323,11 +323,11 @@ a{
     font-size:180px;
     color:white;
     font-weight: bold;
-    transition: all 2s;
+    transition: all 1s ease;
     opacity:0;
     z-index:15;
 }
-.project-card .show1:hover{
+.project-card:hover .show1{
     opacity:1;
 }
 .show2{
@@ -338,9 +338,89 @@ a{
     font-weight: bold;
     z-index: 15;
     color:white;
-    transition:all 2s linear;
+    transition:all 1s ease;
     opacity: 0;
 }
-.show2:hover{
+.project-card:hover .show2{
     opacity:1;
+}
+.project-content{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+    flex-wrap: wrap;
+    padding:2em;
+    z-index:15;
+    color: white;
+    bottom:20%;
+}
+.projectSkill{
+   height: 50px;
+   width:50px;
+}
+.project-content-left{
+    left:10%;
+}
+.project-content-right{
+    right:10%;
+}
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    height:30px;
+    width:75%;
+    gap:10px;
+}
+.heading{
+    margin-top:1.8em;
+    font-size: 40px;
+    font-weight:bold;
+}
+.subHeading{
+   width:75%;
+   font-style: italic;
+   font-size: 16px;
+}
+.button-group{
+    display:flex;
+    gap:2em;
+    position:relative;
+}
+.icons{
+    position:absolute;
+    top:0.2em;
+    left:6em;
+    cursor:pointer;
+    color:white;
+    font-size:30px;
+}
+.icons .fa-brands:hover{
+    color:var(--borange);
+    transition: all 0.4s;
+}
+.icons .fa-solid:hover{
+    color:var(--borange);
+    transition:all 0.4s;
+}
+ .button_red:hover{
+    border:none;
+}
+.project-card:hover .project-content{
+    transform: scale(1.08);
+    transition: 1s;
+}
+#project1{
+    background-image: url(Materials/img/Project1.png);
+}
+#project2{
+    background-image: url(Materials/img/Project2.png);
+    margin-left: 120px;
+}
+#project3{
+    background-image: url(Materials/img/Project3.png);
+}
+#project4{
+    background-image: url(Materials/img/Project4.png);
+    margin-left: 120px;
 }
