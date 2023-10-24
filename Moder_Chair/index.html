@@ -4,11 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Chair</title>
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="page1">
+        <div class="chair-section">
+            <img src="img/chair1.png" alt="">
+        </div>
+        <div class="page-info">
+             <p class="topic">MODERN CHAIR</p> 
+             <h1 class="heading">Telford Longue</h1>
+             <h5>$254 <del>$530</del></h5> 
+             <input type="radio" class="description-chair" id="des">
+             <label for="des">
+                <a href="#description">Description</a>
+             </label>
+             <input type="radio" class="details-chair" id="detail">
+             <label for="detail">
+                <a href="#Full-detail">Details</a>
+             </label>  
+             <div class="description1" id="description">
+                <p>Lorem ipsum dolor sit,amet consectetur adipisicing elit.Id totam tempora enim officia veritatis hic.</p>
+             </div>  
+             <div class="details" id="Full-detail">
+                <div class="detail1">
+                    <p><span>80</span>cm<br>Length</p>
+                </div>
+                <div class="detail2">
+                    <p><span>65</span>cm<br>Width</p>
+                </div>
+                <div class="detail3">
+                    <p><span>90</span>cm<br>Height</p>
+                </div>
+                <div class="detail4">
+                    <p><span>17.6</span>kg<br>Weight</p>
+                </div>
 
+             </div>     
+        </div>
+        <div class="color-section">
+            <p class="color-heading">Choose Color:</p>
+            <div class="option-color">
+               <input type="radio" id="color-1" class="button-color color1">
+               <label for="color-1"></label>
+               <input type="radio" id="color-2" class="button-color color2">
+               <label for="color-2"></label>
+               <input type="radio" id="color-3" class="button-color color3">
+               <label for="color-3"></label>
+               <input type="radio" id="color-4" class="button-color color4">
+               <label for="color-4"></label>
+               <input type="radio" id="color-5" class="button-color color5">
+               <label for="color-5"></label>
+               <input type="radio" id="color-6" class="button-color color6">
+               <label for="color-6"></label>
+            </div>
+            <div class="button-cart"><i class="fa-solid fa-cart-shopping"></i> Add to cart</div>
+        </div>
     </div>
 </body>
 </html>

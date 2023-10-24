@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.page1{
+    height: 100vh;
+    background-color: rgb(230, 130, 130);
+    overflow-x:hidden;
+    overflow-y: auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.page1-content{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    
+}
