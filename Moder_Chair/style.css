@@ -1,21 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
-.page1{
-    height: 100vh;
-    background-color: rgb(230, 130, 130);
-    overflow-x:hidden;
-    overflow-y: auto;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
+.wrapper{
+  height:100vh;
+  overflow-x:hidden;
+  width:100vw;
+  font-size:15px;
+  line-height: 1.7;
+  color:white;
+  font-weight:400;
+  font-family:"Poppins",sans-serif;
+  background-color:#1f2029;
+  overflow-y:auto;
 }
-.page1-content{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction:column;
-    
+.container{
+  width:860px;
+  /* max-width:calc(100%-40px); */
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  position: relative;
+  padding:100px 0;
+}
+[type="radio"]:checked,[type="radio"]:not(:checked){
+  visibility:hidden;
+  position:absolute;
+}
+.button-color:checked+label,.button-color:not(:checked)+label{
+  height:40px;
+  width:40px;
+  border-radius: 4px;
+  box-shadow:0 12px 35px 2px rgba(16, 39, 112, 0.25);
+  z-index:10;
+  cursor:pointer;
+  transition:all 200ms linear;
+  background-position: center;
+  background-size:cover;
+  border:3px solid transparent;
+  margin-right:10px;
+  /* padding-left:5px; */
+} 
+label.color1{
+  margin-left:500px;
+  background-image: url(img/color1.jpg);
+}
+label.color2{
+  background-image:url(img/color2.jpg);
+}
+label.color3{
+  background-image:url(img/color3.jpg);
+}
+label.color4{
+  background-image:url(img/color4.jpg);
+}
+label.color5{
+  background-image:url(img/color5.jpg);
+}
+label.color6{
+  background-image:url(img/color6.jpg);
+}
+.button-color:checked+label{
+  border-color: #434343;
+  transform: scale(1.1);
+}
+.image{
+  background-image: url(img/chair1.png);
+  z-index:9;
+  width:500px;
+  height:410px;
+  position:absolute;
+  top:100px;
+  left:0;
+  transition: all 550ms linear;
+  transition-delay: 100ms;
+  background-size: 100%;
+  background-position:center top;
+  background-repeat: no-repeat;
+  display:inline-block;
+  opacity:0;
+}
+.forcolor-1:checked ~ .image.chair1{
+  opacity:1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.image.chair2{
+  background-image: url(img/chair2.png);
+}
+.forcolor-2:checked ~ .image.chair2{
+  opacity:1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.image.chair3{
+  background-image: url(img/chair3.png);
+}
+.forcolor-3:checked ~ .image.chair3{
+  opacity:1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.image.chair4{
+  background-image: url(img/chair4.png);
+}
+.forcolor-4:checked ~ .image.chair4{
+  opacity:1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.image.chair5{
+  background-image: url(img/chair5.png);
+}
+.forcolor-5:checked ~ .image.chair5{
+  opacity:1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.image.chair6{
+  background: url(img/chair6.png);
+}
+.forcolor-6:checked ~ .image.chair6{
+  opacity:1;
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0) rotate(-1deg);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0) rotate(2deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0) rotate(-3deg);
+  }
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0) rotate(3deg);
+  }
+}
+.info{
+  position:relative;
+  z-index: 10;
+  padding-left:500px;
+}
+.backcolor{
+  width:100%;
+  height:100%;
+  z-index:1;
+  background-image:linear-gradient(196deg, #f1a9a9, #e66767);
+  opacity:0;
+  position:fixed;
+  top:0;
+  left:0;
+}
+.forcolor-1:checked ~ .backcolor.color1{
+  opacity:1;
+  background-image:linear-gradient(196deg, #f1a9a9, #e66767) ;
+}
+.forcolor-2:checked ~ .backcolor.color2{
+  opacity: 1;
+  background-image:linear-gradient(196deg,#4c4c4c,#262626) ;
+}
+.forcolor-3:checked ~ .backcolor.color3{
+  opacity: 1;
+  background-image:linear-gradient(196deg,#8a9fb2,#5f7991) ;
+}
+.forcolor-4:checked ~ .backcolor.color4{
+  opacity: 1;
+  background-image:linear-gradient(196deg,#97afc3,#6789a7) ;
+}
+.forcolor-5:checked ~ .backcolor.color5{
+  opacity: 1;
+  background-image:linear-gradient(196deg,#afa6a0,#8c7f76) ;
+}
+.forcolor-6:checked ~ .backcolor.color6{
+  opacity: 1;
+  background-image:linear-gradient(196deg,#aaadac,#838786);
 }
