@@ -4,15 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RazorPay</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="bg-red-500">white</li>
-            <li>orange</li>
-            <li>green</li>
-        </ul>
+    <!--Nav bar-->
+    <nav class="bg-deepBlue flex flex-wrap">
+        <div class="relative w-[1080px] mx-auto flex justify-between items-center">
+            <a href="/" class="py-88 my-5"><img src="./images/logo.svg" width="125px" height="30px" alt=""></a>
+            <ul class="absolute left-40 h-8 flex gap-6 items-center">
+                <li class="relative text-white group hover:text-lightBlue font-medium cursor-pointer transition-all duration-200">
+                    <a href="#">Payments</a>
+                    <div class="w-full absolute transition-all duration-200 h-1 top-8 opacity-0 bg-lightBlue group-hover:opacity-100"></div>
+                </li>
+                <li class="relative text-white group hover:text-lightBlue font-medium cursor-pointer transition-all duration-200">
+                    <a href="#">Banking+</a>
+                    <div class="w-full absolute transition-all duration-200 h-1 top-8 opacity-0 bg-lightBlue group-hover:opacity-100"></div>
+                </li>
+                <li class="relative text-white group hover:text-lightBlue font-medium cursor-pointer transition-all duration-200">
+                    <a href="#">Credit</a>
+                    <!-- <div class="w-full absolute transition-all duration-200 h-1 top-8 opacity-0 bg-lightBlue group-hover:opacity-100"></div> -->
+                </li>
+                <li class="relative text-white group hover:text-lightBlue font-medium cursor-pointer transition-all duration-200">
+                    <a href="#">Payroll</a>
+                    <div class="w-full absolute transition-all duration-200 h-1 top-8 opacity-0 bg-lightBlue group-hover:opacity-100"></div>
+                </li>
+                <li class="relative text-white group hover:text-lightBlue font-medium cursor-pointer transition-all duration-200">
+                    <a href="#">Resources</a>
+                    <div class="w-full absolute transition-all duration-200 h-1 top-8 opacity-0 bg-lightBlue group-hover:opacity-100"></div>
+                </li>
+                <li class="relative text-white group hover:text-lightBlue font-medium cursor-pointer transition-all duration-200">
+                    <a href="#">Support</a>
+                    <div class="w-full absolute transition-all duration-200 h-1 top-8 opacity-0 bg-lightBlue group-hover:opacity-100"></div>
+                </li>
+                <li class="relative text-white group hover:text-lightBlue font-medium cursor-pointer transition-all duration-200">
+                    <a href="#">Pricing</a>
+                    <div class="w-full absolute transition-all duration-200 h-1 top-8 opacity-0 bg-lightBlue group-hover:opacity-100"></div>
+                </li>
+            </ul>
+            <div class="flex gap-4">
+                <img src="./images/india-flag.svg" alt="">
+                <a href="#">
+                    <div class="text-white font-medium border-solid border-2 my-4 py-2 px-6 border-lightBlue rounded-sm">Log In</div>
+                </a>
+                <a href="#">
+                    <div class="text-white font-medium my-4 py-2 px-4 group bg-white rounded-sm w-[120px] z-0">
+                        <p class="z-10 text-lightBlue text-center font-medium group-hover:text-lightBlue500 ">Sign Up <i class="fa-solid fa-arrow-right text-xs"></i></p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </nav>
+    <!--section1-->
+    <div class="bg-deepBlue w-full flex gap-1 h-[470px] justify-center items-center flex-wrap ">
+         <div class="w-[380px]">
+            <h1 class="text-white text-2xl font-extrabold">Power your finance,<br>grow your business</h1>
+            <br>
+            <p class="text-white mt-5">
+                Accepts Payments from customers.Automate<br>payouts to vendors &employees.Never run out of working capital.
+            </p>
+        <a href="$"><button class="mt-8 bg-lightBlue hover:bg-lightBlue500 transition-all duration-200 text-white font-bold px-4 py-2 rounded-md">Sign Up Now <i class="fa-solid fa-arrow-right text-xs"></i></button></a>
+         </div>
+         <div class="w-380px relative omkar">
+            <img src="./images/hero-illustration.jpg" width="500px" height="350px" alt="">
+         </div>
+
+    </div>
+    <!--image part-->
+    <div>
+        <img src="./images/hero-shape.svg"  class="w-full" alt="">
+    </div>
 </body>
 </html>
